@@ -14,55 +14,64 @@
     <header>
       <nav> <!--вот тут еще вернуться, я не понимаю как оно будет пролистывать, а должно плавно переводить по ссылкам вниз-->
         <span>главная</span>
-        <a href="/lots">посмотреть лоты</a>
-        <a href="/about">об аукционе</a>
+        <a href="#lots">посмотреть лоты</a>
+        <a href="#about">об аукционе</a>
       </nav>
       <a href="#" class="logo">
-        <img src="images/logo-black.svg" alt="логотип">
+        <img src="images/logo-black.svg" alt="логотип" class="logo-black">
       </a>
       <address>
-        +9 999 555 5555
-        info@sobaka.ge
-        наб. Принсенграхт 263-265, Амстердам
+        <p>+9 999 555 5555</p>
+        <p>info@sobaka.ge</p>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
     </header>
     <main>
       <section class="cover">
-        <h1>заголовок</h1>
+        <h1 class="cover-title">
+          <span class="line-left">оно</span>
+          <br>
+          <span class="line-center">тебе</span>
+          <br>
+          <span class="line-right">надо</span>
+        </h1>
         <div class="description">
-          <p>что в секции</p>
-          <button>кнопка</button>
+          <p class="subheading">аукцион вещей, в которые никто не верил </p>
+          <button class="button">сделать ставку</button>
         </div>
       </section>
-      <section class="lots">
+      <section id="lots" class="lots">
         <h2>лоты</h2>
           <ul>
-            <li>
+            <li class="lot-item lot-type-film">
               <a href="#">
                 <article>
-                  фильм режиссера, который бросил киношколу
+                  <img src="" alt="лот3"
+                  <h3>фильм режиссера, который бросил киношколу</h3>
                 </article>
               </a>
             </li>
-            <li>
+            <li class="lot-item lot-type-book">
               <a href="">
                 <article>
-                  книга, где описан один скучный день из жизни рекламного агента
+                  <img src="" alt="лот 2"
+                  <h3>книга, где описан один скучный день из жизни рекламного агента</h3>
                 </article>
               </a>
             </li>
-            <li>
+            <li class="lot-item lot-type-picture">
               <a href="#">
                 <article>
-                  картина, которую повторит даже 5-летний сын маминой подруги
+                  <img src="" alt="лот 2"
+                  <h3>картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 </article>
               </a>
             </li>
           </ul>
           <a href="#">лоты</a>
       </section>
-      <section class="about">
-        <div class="column">...</div>
+      <section id="about" class="about">
+        <div class="column">посмотреть больше</div> <!--тут нужно ссылкой сделать которая никуда не ведет-->
         <div class="column"> <!-- где-то тут нужно добавить черное лого -->
           <h2>об аукционе</h2>
           <div class="'text-group">
@@ -74,14 +83,14 @@
     </main>
     <footer>
       <address>
-        +9 999 555 5555
-        info@sobaka.ge
-        наб. Принсенграхт 263-265, Амстердам
+        <p>+9 999 555 5555</p>
+        <p>info@sobaka.ge</p>
+        <p>наб. Принсенграхт 263-265, Амстердам</p>
       </address>
       <nav>
         <span>главная</span>
-        <a href="/lots">посмотреть лоты</a>
-        <a href="/about">об аукционе</a>
+        <a href="#lots">посмотреть лоты</a>
+        <a href="#about">об аукционе</a>
   </nav>
   <ul class="socials"> <!-- тут изображения/иконки соц сетей -->
     <li> <a href=#>соцсеть1</a></li>
